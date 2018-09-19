@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_help"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="cn.edu.ahnu.wjcy.myapplication.Activity.HelpActivity"
+    android:background="@mipmap/background">
+
+    <RelativeLayout
+        android:id="@+id/top_rl"
+        android:layout_width="336dp"
+        android:layout_height="350dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="130dp"
+        android:background="@mipmap/help_qrcode_bg">
+        <ImageView
+            android:id="@+id/qrcode_iv"
+            android:layout_width="240dp"
+            android:layout_height="240dp"
+            android:layout_centerInParent="true"/>
+    </RelativeLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/top_rl"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:text="注：扫描完成后，客服会通过电话与您联系，请保持电话畅通"
+        android:textSize="30sp"
+        android:textColor="@color/blue"/>
+
+    <ImageView
+        android:id="@+id/image_back"
+        android:layout_width="130dp"
+        android:layout_height="45dp"
+        android:layout_alignParentBottom="true"
+        android:background="@mipmap/btn_back"
+        android:layout_marginBottom="15dp"
+        android:layout_marginLeft="20dp"
+        />
+</RelativeLayout>

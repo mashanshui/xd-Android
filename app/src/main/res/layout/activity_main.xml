@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@mipmap/background"
+    tools:context="cn.edu.ahnu.wjcy.myapplication.Activity.MainActivity">
+
+    <!--封面页-->
+    <RelativeLayout
+        android:id="@+id/cover_rl"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@mipmap/advance"
+        android:visibility="gone">
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/main_rl"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="visible">
+        <ImageView
+            android:id="@+id/setting_iv"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:background="#00000000" />
+
+        <ImageView
+            android:id="@+id/store_iv"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_alignParentRight="true"
+            android:background="#00000000" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="80dp"
+            android:src="@mipmap/help"
+            android:layout_centerVertical="true"
+            android:layout_toEndOf="@+id/setting_iv" />
+
+        <RelativeLayout
+            android:id="@+id/right_rl"
+            android:layout_width="212dp"
+            android:layout_height="184dp"
+            android:layout_centerVertical="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="100dp">
+
+            <ImageView
+                android:id="@+id/face_pay_iv"
+                android:layout_width="212dp"
+                android:layout_height="77dp"
+                android:src="@mipmap/btn_start_pay_face" />
+
+            <ImageView
+                android:id="@+id/phonenum_pay_iv"
+                android:layout_width="212dp"
+                android:layout_height="77dp"
+                android:src="@mipmap/btn_start_pay_phonenum"
+                android:layout_alignParentBottom="true"/>
+
+
+        </RelativeLayout>
+
+
+        <ImageView
+            android:id="@+id/talk_iv"
+            android:layout_width="136dp"
+            android:layout_height="40dp"
+            android:src="@mipmap/btn_talk"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginRight="20dp"
+            android:layout_marginBottom="15dp"/>
+
+        <ImageView
+            android:id="@+id/help_iv"
+            android:layout_width="136dp"
+            android:layout_height="40dp"
+            android:src="@mipmap/urgent"
+            android:layout_alignParentBottom="true"
+            android:layout_marginLeft="20dp"
+            android:layout_marginBottom="15dp"/>
+    </RelativeLayout>
+</RelativeLayout>
+
+

@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@mipmap/background"
+    tools:context="cn.edu.ahnu.wjcy.myapplication.Activity.PhonenumPayActivity">
+
+    <RelativeLayout
+        android:layout_width="862dp"
+        android:layout_height="467dp"
+        android:layout_centerInParent="true"
+        android:background="@mipmap/phonenum_start_pay_bg">
+
+        <LinearLayout
+            android:layout_width="372dp"
+            android:layout_height="266dp"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="60dp"
+            android:orientation="vertical"
+            android:gravity="center_horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30dp"
+                android:text="@string/input_phonenum"
+                android:textSize="22sp"
+                android:textColor="@color/blue" />
+            
+            <TextView
+                android:id="@+id/phonenum_tv"
+                android:layout_width="match_parent"
+                android:layout_height="55dp"
+                android:layout_marginTop="25dp"
+                android:background="@mipmap/input_bg"
+                android:gravity="center"
+                android:textSize="22sp"
+                android:textColor="@android:color/black"/>
+            
+            <ImageView
+                android:id="@+id/start_pay_iv"
+                android:layout_width="193dp"
+                android:layout_height="55dp"
+                android:layout_marginTop="50dp"
+                android:clickable="false"
+                android:src="@mipmap/btn_start_pay_unclick"/>
+        </LinearLayout>
+
+        <cn.edu.ahnu.wjcy.myapplication.view.KeyboardView
+            android:id="@+id/keyboard_kv"
+            android:layout_width="280dp"
+            android:layout_height="266dp"
+            android:layout_centerVertical="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="60dp">
+        </cn.edu.ahnu.wjcy.myapplication.view.KeyboardView>
+    </RelativeLayout>
+
+    <Button
+        android:id="@+id/cancel_btn"
+        android:layout_width="130dp"
+        android:layout_height="45dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="15dp"
+        android:layout_marginLeft="20dp"
+        android:background="@mipmap/btn_cancel"
+        android:layout_marginTop="150dp" />
+</RelativeLayout>

@@ -1,0 +1,33 @@
+package cn.edu.ahnu.wjcy.myapplication.Model;
+
+/**
+ * Created by Cuibiming on 2017-10-21.
+ */
+
+public class CheckResult {
+
+    /**
+     * code : SUCCESS
+     * message : 成功
+     */
+
+    private String status;
+    private String message;
+
+
+    public String getStatus() {
+        return status;
+    }
+
+    public void setStatus(String status) {
+        this.status = status;
+    }
+
+    public String getMessage() {
+        return message;
+    }
+
+    public void setMessage(String message) {
+        this.message = message;
+    }
+}

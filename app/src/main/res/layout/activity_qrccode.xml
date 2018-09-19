@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@mipmap/background"
+    tools:context="cn.edu.ahnu.wjcy.myapplication.Activity.QrccodeActivity">
+
+    <RelativeLayout
+        android:id="@+id/pay_bg_rl"
+        android:layout_width="827dp"
+        android:layout_height="493dp"
+        android:layout_centerInParent="true"
+        android:background="@mipmap/wechat_pay_bg">
+        <ImageView
+            android:id="@+id/imgQrcode"
+            android:layout_width="260dp"
+            android:layout_height="260dp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="80dp"/>
+
+        <TextView
+            android:id="@+id/payTipes"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/imgQrcode"
+            android:text="需要支付***元"
+            android:textSize="22dp"
+            android:layout_marginTop="20dp"
+            android:textColor="#000000"
+            android:layout_centerHorizontal="true" />
+        <TextView
+            android:id="@+id/payTipes_en"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/payTipes"
+            android:text="Need to pay 88.0 RMB"
+            android:textSize="20dp"
+            android:layout_marginTop="5dp"
+            android:textColor="#000000"
+            android:layout_centerHorizontal="true" />
+
+        <TextView
+            android:id="@+id/timeToFinish"
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginRight="30dp"
+            android:gravity="center_vertical"
+            android:text="剩余时间:60S"
+            android:textColor="@android:color/white"
+            android:textSize="20sp" />
+    </RelativeLayout>
+
+    <ImageView
+        android:id="@+id/image_back"
+        android:layout_width="130dp"
+        android:layout_height="45dp"
+        android:layout_alignParentBottom="true"
+        android:background="@mipmap/btn_back"
+        android:layout_marginBottom="15dp"
+        android:layout_marginLeft="20dp" />
+</RelativeLayout>

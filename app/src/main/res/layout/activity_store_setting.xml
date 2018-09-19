@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_store_setting"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="cn.edu.ahnu.wjcy.myapplication.Activity.StoreSettingActivity">
+
+    <EditText
+        android:id="@+id/num_et"
+        android:layout_width="200dp"
+        android:layout_height="100dp"
+        android:textColor="@android:color/black"
+        android:hint="输入店铺号"
+        android:textSize="30sp"/>
+
+    <Button
+        android:id="@+id/num_btn"
+        android:layout_width="120dp"
+        android:layout_height="60dp"
+        android:layout_toRightOf="@id/num_et"
+        android:text="设置店铺号"/>
+
+    <EditText
+        android:id="@+id/code_et"
+        android:layout_width="200dp"
+        android:layout_height="100dp"
+        android:textColor="@android:color/black"
+        android:layout_below="@id/num_et"
+        android:hint="输入机器码"
+        android:textSize="30sp"/>
+
+    <Button
+        android:id="@+id/code_btn"
+        android:layout_width="120dp"
+        android:layout_height="60dp"
+        android:layout_toRightOf="@id/code_et"
+        android:layout_below="@id/num_et"
+        android:text="设置机器码"/>
+
+    <Button
+        android:id="@+id/close_btn"
+        android:layout_width="120dp"
+        android:layout_height="60dp"
+        android:layout_below="@id/code_et"
+        android:text="关闭"/>
+</RelativeLayout>

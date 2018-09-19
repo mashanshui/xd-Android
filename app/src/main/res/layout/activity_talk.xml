@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_talk"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@mipmap/background"
+    tools:context="cn.edu.ahnu.wjcy.myapplication.Activity.TalkActivity">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:orientation="vertical">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="请说出内容"
+            android:textSize="35sp"
+            android:gravity="center_horizontal"
+            android:textColor="#178fa1"/>
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@mipmap/talk"
+            android:layout_marginTop="20dp"/>
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/image_back"
+        android:layout_width="130dp"
+        android:layout_height="45dp"
+        android:layout_alignParentBottom="true"
+        android:background="@mipmap/btn_back"
+        android:layout_marginBottom="15dp"
+        android:layout_marginLeft="20dp" />
+</RelativeLayout>
